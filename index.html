@@ -1,0 +1,120 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manhuako Regresa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100svh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .background {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background:
+                linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+                url("https://i.ibb.co/mCc5zW7t/s213231123.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .contenido {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: clamp(2.6rem, 9vw, 5rem);
+            margin-bottom: 10px;
+            -webkit-text-stroke: 1.3px #000;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        h2 {
+            font-size: clamp(1.6rem, 6vw, 3rem);
+            margin-bottom: 35px;
+            letter-spacing: 1.5px;
+            -webkit-text-stroke: 1.3px #000;
+            text-shadow:
+                1px 1px 0 #000,
+                -1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+        }
+
+        .discord-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 26px;
+            background-color: #5865F2;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .discord-btn:hover {
+            background-color: #4752c4;
+            transform: scale(1.05);
+        }
+
+        .discord-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: #fff;
+            display: block;
+        }
+
+        /* AJUSTES ESPECÍFICOS PARA MÓVIL */
+        @media (max-width: 768px) {
+            .background {
+                background-position: center top;
+                background-size: auto 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="contenido">
+        <h1>PRÓXIMAMENTE</h1>
+        <h2>MANHUAKO REGRESA</h2>
+
+        <a href="https://discord.gg/t3SUMyhf9m" class="discord-btn" target="_blank">
+            <svg viewBox="0 0 245 240" aria-hidden="true">
+                <path d="M104.4 104.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zm36.2 0c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"/>
+                <path d="M189.5 20h-134C24.7 20 10 34.7 10 53.5v133c0 18.8 14.7 33.5 33.5 33.5h113.1l-5.3-18.5 12.8 11.9 12.1 11.2L235 220V53.5C235 34.7 220.3 20 201.5 20z"/>
+            </svg>
+            Entrar al Discord
+        </a>
+    </div>
+
+</body>
+</html>
